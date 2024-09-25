@@ -19,6 +19,11 @@ class TaskListViewController: UITableViewController {
        
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
     @IBAction func  addButtonPressed(_ sender: Any) {
         showALert()
     }
@@ -40,6 +45,18 @@ class TaskListViewController: UITableViewController {
         cell.detailTextLabel?.text = "\(taskList.tasks.count)"
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let currentList = taskLists[indexPath.row]
+        
+        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { _, _, _ in
+            StorageManager.shared.delete(taskList: currentList)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+        
+        return UISwipeActionsConfiguration(actions: [deleteAction])
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
