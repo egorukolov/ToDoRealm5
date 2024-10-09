@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "4sw-4l-TUq"; */
+"4sw-4l-TUq.text" = "Detail";
+
+/* Class = "UISegmentedControl"; AG8-7U-li2.segmentTitles[0] = "A-Z"; ObjectID = "AG8-7U-li2"; */
+"AG8-7U-li2.segmentTitles[0]" = "A-Z";
+
+/* Class = "UISegmentedControl"; AG8-7U-li2.segmentTitles[1] = "Data"; ObjectID = "AG8-7U-li2"; */
+"AG8-7U-li2.segmentTitles[1]" = "Data";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "RDs-Af-FFV"; */
+"RDs-Af-FFV.text" = "Title";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "WgE-ze-1uv"; */
+"WgE-ze-1uv.text" = "Detail";
+
+/* Class = "UINavigationItem"; title = "Task List"; ObjectID = "Z3p-zi-tXm"; */
+"Z3p-zi-tXm.title" = "Task List";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "qe0-Di-wLZ"; */
+"qe0-Di-wLZ.text" = "Title";
